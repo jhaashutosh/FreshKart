@@ -1,0 +1,360 @@
+body{
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url(https://wallpaperaccess.com/full/1567674.jpg);
+    
+}
+.navbar{
+    
+    display: grid;
+    /* border: 2px solid red; */
+    grid-template-columns:0.8fr 0.5fr 8fr 1fr 1fr 1fr 0fr;
+    font-family: 'Roboto', sans-serif;
+    height: 68px;
+}
+.dropdown{
+    width: 0px;
+    margin-right:0px;
+}
+.nav{
+    /* border: 2px solid black; */
+    height: 50px;
+    width: 140px;
+    margin-top: 0px;
+    
+}
+.kartc{
+    width: 35px;
+    height: 35px;
+    margin-top: 31px; 
+}
+.kart_icon{
+    width: 35px;
+    height: 35px;
+}
+.xyz {
+    margin-top: 35px;
+    font-size: 140%;
+    
+}
+.xyz a{
+    text-decoration: none;
+    color: rgb(114, 111, 111);
+
+}
+.xyz a:hover{
+    text-decoration: underline;
+    color: rgb(17, 161, 60);
+    font-weight: bold;
+}
+
+.account_icon{
+    margin-right : 10px;
+    width: 30px;
+    margin-top: 32px;
+}
+
+#account_icon{
+    height: 35px;
+    width: 35px;
+}
+
+
+.fresh{
+    width: 148px;
+    height: 70px;
+    font-size: 60px;
+    margin-top: -16px;
+    color: rgb(17, 161, 60);
+    padding: 0px;
+    margin-top: 0px;
+    font-weight: 500;
+}
+.kart{
+    font-size: 40px;
+    width: 90px;
+    /* display: flex; */
+    color: rgb(114, 111, 111);
+    padding: 0px;
+    margin-top: 18px;
+    font-weight: 500;
+}
+.categories{
+    background-color: rgb(17, 161, 60);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.cart{
+    background-color: rgb(17, 161, 60);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.dropdown{
+    visibility: hidden;
+    position: relative;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* border: red solid 2px;  */
+    height: 50px;
+    margin-bottom: 2px;
+   
+}
+
+
+.searchbar{
+    display: flex;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+   
+     /* margin-top:4px; */
+     /* margin-left:5px;   */
+    background-color: rgb(17, 161, 60);
+
+
+    border: 2px solid rgb(114, 111, 111);
+    border-radius: 5px;
+    padding: 5px;
+    
+  }
+  .searchbar input{
+      height: 40px;
+      width: 95%;
+      /* padding: 5px; */
+      /* background-color: rgb(161, 150, 150); */
+      /* color: yellow; */
+      
+      border-radius: 7px;
+      margin-right:5px;
+      
+  }
+  
+  #searchicon{
+   margin-top:20px; 
+   border-radius: 7px;
+   
+  }
+  #search_btn{
+      border-radius: 7px;
+      height: 38px;
+      margin-top:1px;
+  }
+  #search_btn img{
+    width: 10px;
+    height: 10px;
+    
+  }
+
+.nav2{
+    /* border:2px rgb(122, 122, 85) solid */
+    /* z-index: 100; */
+
+}
+
+
+#imagegrid{
+    display:grid;
+    border: 2px solid red;
+    grid-template-columns: 0.78fr 3fr;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    /* margin-bottom: 10px; */
+}
+.images{
+    border: 2px solid blue;
+  }
+  .category{
+      z-index: 1000;
+      background-color: #fff;
+  }
+.slidershow{
+    width: 500%;
+    height: 100%;
+    overflow: hidden;
+     display: flex;
+    position: relative;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    float: right;
+  }
+  
+  .middle{
+    
+    transform: translate(-50%,-50%);
+    
+    
+  }
+  .navigation{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-20%);
+    display: flex;
+  }
+  .bar{
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(8, 7, 7);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 100px;
+}
+  .bar:hover{
+    background: rgb(32, 27, 27);
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 800%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+.offers{
+    display: grid;
+    border: 2px solid red;
+    grid-template-columns: 0.78fr 1fr 1fr 1fr;
+    height:100px;
+}
+.nav3{
+    border:2px solid rgb(228, 228, 223);
+    color:rgb(245, 240, 240);
+    justify-content: center;
+    margin-right: 2px;
+    
+}
+
+@media only screen and (max-width: 730px){
+    
+    .xyz{
+       visibility: hidden;
+    }
+    #visible{
+    visibility: visible;
+    }
+    #account_icon{
+        width: 50px;
+        height: 50px;
+        margin-top: -30%;
+        margin-right: 30%;
+    }
+   .navbar{
+       display:flex;
+       justify-content: middle;
+       
+   }
+   .dropbtn{
+    margin-top: 1.3%;
+    padding-top: 5px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    cursor:  pointer;
+    border: green solid; 
+    border-radius : 25%; 
+    margin-left: 5px;
+    margin-right: 0px;
+    width: 35px;
+    height: 40px;
+    
+}
+
+.dropdown{
+    visibility: visible;
+    height:15px;
+    width: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    /* margin-right: 23px; */
+    z-index: 100;
+    position: relative;
+    
+}
+
+.dropdown-content {
+    display:none;
+    
+    padding-bottom: 0px;
+    border-radius: 10%;
+    position: absolute;
+    background-color: rgb(184, 235, 199);
+    z-index: 1000;
+    right: -25px;
+    width: 100px;
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color:rgb(114, 111, 111);
+    display: block;
+    
+   
+    
+}
+
+.dropdown-content a:hover {
+   text-decoration: underline;
+   color: rgb(22, 124, 51);
+   font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#menu_icon{
+    height: 25px;
+    width : 15px;
+
+}
+}
